@@ -9,7 +9,7 @@ const Monitor = require('ping-monitor');
 
 keepAlive();
 const monitor = new Monitor({
-  website: 'https://Expresobot.thephodit.repl.run',
+  website: 'https://GenerousUnsungProfiles.thephodit.repl.run',
   title: 'Secundario',
   interval: 30 // minutes
 
@@ -33,7 +33,11 @@ client.on("ready", () => {
     {
       name: `Expreso Mercosur`,
       type: `PLAYING`
-    }												
+    },
+		{
+      name: `Created by Miguel22247`,
+      type: `WATCHING`
+		}						
   ]
 
   setInterval(() => {
@@ -55,7 +59,7 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
 
-  if (message.content.startsWith(prefix + 'servidor')) { //Muestra datos del servidor
+  if (message.content.startsWith(prefix + 'servidor')) { // Muestra datos del servidor
     var server = message.guild;
 
     const embed = new Discord.MessageEmbed()
@@ -95,7 +99,7 @@ client.on("message", (message) => {
       message.delete()
     } else
 
-      if (message.content.startsWith(prefix + 'comandos')) { //Muestra los comandos disponibles para el servidor
+      if (message.content.startsWith(prefix + 'comandos')) { // Muestra los comandos disponibles para el servidor
         const embed = new Discord.MessageEmbed()
           .setTitle("Comandos de Expreso Mercosur")
           .setColor(0x00AE86)
@@ -114,7 +118,7 @@ client.on("message", (message) => {
         message.delete()
 
       } else
-        if (message.content.startsWith(prefix + 'info')) { //Muestra los comandos disponibles para el servidor
+        if (message.content.startsWith(prefix + 'info')) { // Muestra los comandos disponibles para el servidor
           const embed = new Discord.MessageEmbed()
             .setTitle("Acerca de Expreso Mercosur")
             .setColor("#2f3136")
@@ -125,7 +129,7 @@ client.on("message", (message) => {
           message.delete()
 
         } else
-          if (message.content.startsWith(prefix + 'reglas')) { //Muestra un mensaje marcando donde estan las reglas
+          if (message.content.startsWith(prefix + 'reglas')) { // Muestra un mensaje marcando donde estan las reglas
             const embed = new Discord.MessageEmbed()
               .setTitle("Redes de Expreso Mercosur")
               .setColor(0x00AE86)
@@ -142,7 +146,7 @@ client.on("message", (message) => {
             message.delete()
           } else
 
-            if (message.content.startsWith(prefix + 'redes')) { //Muestra un mensaje mostrando nuestras redes sociales
+            if (message.content.startsWith(prefix + 'redes')) { // Muestra un mensaje mostrando nuestras redes sociales
               const embed = new Discord.MessageEmbed()
                 .setTitle("Redes de Expreso Mercosur")
                 .setColor(0x00AE86)
@@ -162,7 +166,7 @@ client.on("message", (message) => {
               message.delete()
             } else
 
-              if (message.content.startsWith(prefix + 'unirse')) { //Muestra un mensaje mostrando como unirse a la empresa
+              if (message.content.startsWith(prefix + 'unirse')) { // Muestra un mensaje mostrando como unirse a la empresa
                 const embed = new Discord.MessageEmbed()
                   .setTitle(":construction_worker:¿Cómo me uno al equipo?:construction_worker:")
                   .setColor(0x00AE86)
@@ -196,7 +200,7 @@ client.on("message", (message) => {
                       sentEmbed.react("❌");//Reacciona al mensaje
                       message.delete()
                     });
-                } else //Aqui comienzan los comandos varios como Buenos dias, buenas tardes y buenas noches 
+                } else // Aqui comienzan los comandos varios como Buenos dias, buenas tardes y buenas noches 
 
                   if (message.content.startsWith(prefix + 'gm')) {
                     const embed = new Discord.MessageEmbed()
@@ -208,7 +212,7 @@ client.on("message", (message) => {
                       .setColor(0x66b3ff)
                     message.channel.send(embed)
                     message.delete()
-                  } else //Comando de Buenas noches
+                  } else // Comando de Buenas noches
 
                     if (message.content.startsWith(prefix + 'gn')) {
                       const embed = new Discord.MessageEmbed()
@@ -220,7 +224,7 @@ client.on("message", (message) => {
                         .setColor(0x66b3ff)
                       message.channel.send(embed)
                       message.delete()
-                    } else //Comando de Buenas tardes
+                    } else // Comando de Buenas tardes
 
                       if (message.content.startsWith(prefix + 'ga')) {
                         const embed = new Discord.MessageEmbed()
@@ -236,7 +240,7 @@ client.on("message", (message) => {
 
   if (message.content.startsWith(prefix + "convoy")) {
     message.channel.send("@everyone");}
- if (message.content.startsWith(prefix + 'convoy')) { //Muestra un mensaje mostrando el siguiente convoy
+ if (message.content.startsWith(prefix + 'convoy')) { // Muestra un mensaje mostrando el siguiente convoy
               const embed = new Discord.MessageEmbed()
                  .setColor("#2f3136")
                 .setFooter("Expreso Mercosur | Todos los derechos reservados", client.user.avatarURL())
@@ -253,23 +257,9 @@ client.on("message", (message) => {
             } 
 
 
-    if (message.content.startsWith(prefix + 'av')) { //Muestra el avatar del usuario
+    if (message.content.startsWith(prefix + 'av')) { // Muestra el avatar del usuario
       avatarEmbed(message, language = 'spanish');
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

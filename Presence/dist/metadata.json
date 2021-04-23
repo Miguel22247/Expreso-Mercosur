@@ -1,0 +1,27 @@
+
+{
+	"$schema": "https://schemas.premid.app/metadata/1.3",
+	"author": {
+	  "name": "Miguel22247",
+	  "id": "381449298237194250"
+	},	
+"url": [
+	"expresomercosur.ga",
+	"www.expresomercosur.ga"
+],
+"description": {
+	"en": "Expreso Mercosur is a Spanish talk VTC within the TruckersMP community",
+	"es": "Expreso Mercosur es una VTC de habla hispana en TruckersMP"
+},
+"service": "Expreso Mercosur",
+"version": "0.1.0",
+"logo": "https://imgur.com/TndjirB.png",
+"thumbnail": "https://imgur.com/TndjirB.png",
+"color": "#007CDF",
+"tags": [
+  "ets2",
+  "ats",
+  "tmp"
+],
+"category": "other"
+}
